@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -14,7 +15,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@pv/types": ["src/types"],
+      "@pv/components": ["src/components"],
+      "@pv/containers": ["src/containers"],
+      "@pv/services": ["src/services"],
+      "@pv/utils": ["src/utils"]
+    }
   },
   "include": ["src"]
 }
